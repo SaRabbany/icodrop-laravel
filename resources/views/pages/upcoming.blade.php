@@ -29,9 +29,6 @@
                     <span class="project">PROJECT</span>
                 </div>
                 <div class="col-lg-2">
-                    <span class="interest-title">INTEREST</span>
-                </div>
-                <div class="col-lg-2">
                     <span class="category-title">CATEGORY</span>
                 </div>
                 <div class="col-lg-2">
@@ -65,12 +62,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 interest">
-                        <span>Not Rated</span>
 
-
-
-                    </div>
+                   
                     <div class="col-lg-2 category">
                         <span>{{ $singleUpcoming->card_type }}</span>
 
@@ -82,7 +75,11 @@
 
                     </div>
                     <div class="col-lg-2 end-date">
-                        <span>{{ $singleUpcoming->sale_end }}</span>
+                        @php
+                        $endMonth = \Carbon\Carbon::parse($singleUpcoming->sale_end)->format('M');
+                        $enddate = \Carbon\Carbon::parse($singleUpcoming->sale_end)->format('d');
+                       @endphp
+                        <span> {{ $endMonth }} - {{ $enddate }}</span>
 
 
                     </div>

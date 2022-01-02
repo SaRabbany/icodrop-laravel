@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CardController;
+use App\Http\Controllers\dashboardController;
 use App\Http\Controllers\indexController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,15 +40,16 @@ Route::get('sandbox-ico-list', [indexController::class, 'SandBox_ico'])->name('S
 
 //protected routes
 Route::middleware(['auth:sanctum'])->group(function () {
-    Route::get('admin', function() {
-        return view('dashboard.dashboard');
-    })->name('admin');
 
-    // Route::get('dashboard',function(){
-    //     return view('dashboard.dashboard');
-    // })->name('dashboard');
+    Route::get('admin', [dashboardController::class,'index'] )->name('admin');
 
     route::resource('cards',CardController::class);
+    Route::get('card-update/{id}', [CardController::class, 'update'])->name('card-update');
+    Route::delete('card-delete/{id}', [CardController::class, 'destroy'])->name('card-delete');
+
+    Route::post('card-update-store', [cardcontroller::class,'saveUpdate'])->name('cards.saveUpdate');
+    
+
     route::get('archived', [CardController::class, 'archived'])->name('archived');
 });
 

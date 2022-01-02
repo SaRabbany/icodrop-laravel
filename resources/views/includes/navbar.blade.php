@@ -1,8 +1,6 @@
-
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{{ route('index') }}">
             <div class="logo">
                 <img src="{{ asset('images/logo/LogoDrops.png') }}" alt="">
             </div>

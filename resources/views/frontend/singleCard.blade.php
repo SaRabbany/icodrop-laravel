@@ -42,7 +42,6 @@
                         
                     @php
                         $different_days  = \Carbon\Carbon::parse($card->sale_start)->diffInDays($card->sale_end);
-
                     @endphp
                         <span>Token Sale <b class="token-ends-in">ends in <br>{{ $different_days }} day</b></span>
                     </div>
