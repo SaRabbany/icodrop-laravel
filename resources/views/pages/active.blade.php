@@ -28,7 +28,7 @@
                     <div class="col-lg-4">
                         <span class="project">PROJECT</span>
                     </div>
-                   
+
                     <div class="col-lg-2">
                         <span class="category-title">CATEGORY</span>
                     </div>
@@ -43,7 +43,7 @@
             <div class="ico-details">
                 @foreach ( $active as $singleActive )
 
-                <a class="ico">
+                <a class="ico" href="{{ route('singleCard', $singleActive->id) }}">
                     <div class="row align-items-center">
                         <div class="col-lg-4 d-flex align-items-center">
                             <div class="img">
@@ -62,11 +62,9 @@
                                 </div>
                             </div>
                         </div>
-                    
+
                         <div class="col-lg-2 category">
-                            <span>{{ $singleActive->card_type }}</span>
-
-
+                            <span>{{ $singleActive->service_type }}</span>
 
                         </div>
                         <div class="col-lg-2 received">

@@ -27,7 +27,7 @@
             <span>ETH $4002  <span class="redNumber">-0.6%</span></span>
         </div>
         <div class="smallDesc">
-            <p><span class="redNumber">*</span> DISCLAIMER: All information including our "Interest Level" rating, is provided merely for informational purposes. ICO Drops does not provide investment advice </p>
+            <p><span class="redNumber">*</span> DISCLAIMER: All information including our "Interest Level" rating, is provided merely for informational purposes. Ico Bulls does not provide investment advice </p>
         </div>
     </div>
 </header>

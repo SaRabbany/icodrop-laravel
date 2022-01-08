@@ -1,108 +1,108 @@
 body {
     background: #f3f3f3;
   }
-  
+
   ::-webkit-scrollbar {
     width: 6px;
   }
-  
+
   ::-webkit-scrollbar-thumb {
-    background: #1EBF74;
+    background: #E97701;
     border-radius: 10px;
   }
-  
+
   nav {
     background: #000;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
-  
+
   nav .logo {
     max-width: 100px;
   }
-  
+
   nav .logo img {
     width: 100%;
   }
-  
+
   nav .navbar-toggler {
-    background: #1EBF74;
+    background: #E97701;
   }
-  
+
   nav .navbar-toggler img {
     width: 25px;
   }
-  
+
   nav .navbar-collapse .navbar-nav {
     text-align: center;
   }
-  
+
   nav .navbar-collapse .navbar-nav .nav-link {
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
-    color: #1EBF74;
+    color: #E97701;
   }
-  
+
   header .situation {
     margin-top: 10px;
   }
-  
+
   header .situation span {
     font-size: 12px;
     font-weight: 700;
     color: rgba(56, 56, 56, 0.5);
   }
-  
+
   header .situation .greenNumber {
-    color: #1EBF74;
+    color: #E97701;
     margin-right: 20px;
   }
-  
+
   header .situation .redNumber {
     color: #cc327a;
   }
-  
+
   header .smallDesc {
     margin-top: 6px;
   }
-  
+
   header .smallDesc p {
     font-size: 12px;
     color: rgba(56, 56, 56, 0.5);
   }
-  
+
   header .smallDesc p span {
     color: #cc327a;
   }
-  
+
   footer .container {
     padding-top: 20px;
     border-top: 1px solid #dbdbdb;
   }
-  
+
   footer .container .logo {
     width: 100px;
   }
-  
+
   footer .container .logo img {
     width: 100%;
   }
-  
+
   footer .container .descs {
     margin-top: 15px;
   }
-  
+
   footer .container .descs p {
     opacity: 0.8;
     color: #383838;
     font-size: 12px;
   }
-  
+
   footer .container .page-links li {
     list-style: none;
     margin-bottom: 5px;
   }
-  
+
   footer .container .page-links li a {
     text-decoration: none;
     color: #383838;
@@ -110,40 +110,40 @@ body {
     font-size: 14px;
     opacity: 0.8;
   }
-  
+
   section.card-details {
     padding: 50px 0;
   }
-  
+
   section.card-details .card {
     width: 85%;
     border: none;
     border-bottom: 1px solid #f3f0f0;
     margin: auto;
   }
-  
+
   @media screen and (max-width: 920px) {
     section.card-details .card {
       width: 100%;
     }
   }
-  
+
   section.card-details .card .important {
     color: #cc327a;
   }
-  
+
   section.card-details .message-card {
     padding: 15px 40px;
   }
-  
+
   section.card-details .message-card p {
     margin-bottom: 0;
   }
-  
+
   section.card-details .details-cards {
     padding: 40px 40px;
   }
-  
+
   section.card-details .details-cards .logo-img {
     margin-right: 15px;
     width: 60px;
@@ -151,40 +151,40 @@ body {
     border-radius: 50%;
     overflow: hidden;
   }
-  
+
   section.card-details .details-cards .logo-img img {
     width: 100%;
   }
-  
+
   section.card-details .details-cards .name-category .name h2 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 0;
   }
-  
+
   section.card-details .details-cards .name-category h5.category {
     opacity: 0.8;
     font-weight: bold;
     margin-bottom: 12px;
   }
-  
+
   section.card-details .details-cards .card-titles {
     margin-bottom: 20px;
   }
-  
+
   section.card-details .details-cards .card-titles h6 {
     font-size: 20px;
     font-weight: bold;
   }
-  
+
   section.card-details .details-cards .small-details ul {
     padding: 0;
   }
-  
+
   section.card-details .details-cards .small-details ul li {
     list-style: none;
   }
-  
+
   section.card-details .coverCard .card-contents {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -195,64 +195,64 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  
+
   section.card-details .coverCard .card-contents .coverImg {
     width: 68%;
   }
-  
+
   @media screen and (max-width: 720px) {
     section.card-details .coverCard .card-contents .coverImg {
       width: 100%;
     }
   }
-  
+
   section.card-details .coverCard .card-contents .coverImg img {
     width: 100%;
   }
-  
+
   section.card-details .coverCard .card-contents .side-details {
     width: 25%;
     border: 1px solid #f3f0f0;
     padding: 30px;
     text-align: center;
   }
-  
+
   @media screen and (max-width: 720px) {
     section.card-details .coverCard .card-contents .side-details {
       width: 100%;
     }
   }
-  
+
   section.card-details .coverCard .card-contents .side-details .money-transfer {
     margin: 20px 0 15px 0;
   }
-  
+
   section.card-details .coverCard .card-contents .side-details .money-transfer .total-reveived b {
     font-size: 20px;
     font-weight: bold;
-    color: #1EBF74;
+    color: #E97701;
   }
-  
+
   section.card-details .coverCard .card-contents .side-details .money-transfer h6 {
     margin-bottom: 0;
   }
-  
+
   section.card-details .coverCard .card-contents .side-details .website-link a, section.card-details .coverCard .card-contents .side-details .whitepaper-link a {
     width: 100%;
     text-decoration: none;
     color: #fff;
   }
-  
+
   section.card-details .coverCard .card-contents .side-details .website-link a button, section.card-details .coverCard .card-contents .side-details .whitepaper-link a button {
     width: 100%;
     padding: 2px;
     font-size: 14px;
     border: none;
-    background: #1EBF74;
+    background: #E97701;
     font-weight: 500;
     color: #ffffff;
   }
-  
+
   section.card-details .screenshot-cards .screenshot-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -263,39 +263,39 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  
+
   section.card-details .screenshot-cards .screenshot-container .screenshot {
     width: 22%;
     text-align: center;
     margin-bottom: 20px;
   }
-  
+
   @media screen and (max-width: 920px) {
     section.card-details .screenshot-cards .screenshot-container .screenshot {
       width: 30%;
     }
   }
-  
+
   @media screen and (max-width: 720px) {
     section.card-details .screenshot-cards .screenshot-container .screenshot {
       width: 45%;
     }
   }
-  
+
   @media screen and (max-width: 420px) {
     section.card-details .screenshot-cards .screenshot-container .screenshot {
       width: 100%;
     }
   }
-  
+
   section.card-details .screenshot-cards .screenshot-container .screenshot .image {
     width: 100%;
   }
-  
+
   section.card-details .screenshot-cards .screenshot-container .screenshot .image img {
     width: 100%;
   }
-  
+
   section.card-details .screenshot-cards .screenshot-container .screenshot-name {
     font-size: 15px;
     font-weight: 500;

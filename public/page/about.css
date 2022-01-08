@@ -1,5 +1,5 @@
 body {
-  background: #f3f3f3;
+  background: rgba(233, 121, 1, 0.1);
 }
 
 ::-webkit-scrollbar {
@@ -7,7 +7,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1EBF74;
+  background: #E97701;
   border-radius: 10px;
 }
 
@@ -17,15 +17,11 @@ nav {
 }
 
 nav .logo {
-  max-width: 100px;
-}
-
-nav .logo img {
-  width: 100%;
+  max-width: 150px;
 }
 
 nav .navbar-toggler {
-  background: #1EBF74;
+  background: #E97701;
 }
 
 nav .navbar-toggler img {
@@ -38,9 +34,9 @@ nav .navbar-collapse .navbar-nav {
 
 nav .navbar-collapse .navbar-nav .nav-link {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
-  color: #1EBF74;
+  color: #E97701;
 }
 
 header .situation {
@@ -54,7 +50,7 @@ header .situation span {
 }
 
 header .situation .greenNumber {
-  color: #1EBF74;
+  color: #E97701;
   margin-right: 20px;
 }
 
@@ -74,6 +70,9 @@ header .smallDesc p {
 header .smallDesc p span {
   color: #cc327a;
 }
+footer {
+    background-color: #fff;
+}
 
 footer .container {
   padding-top: 20px;
@@ -84,9 +83,6 @@ footer .container .logo {
   width: 100px;
 }
 
-footer .container .logo img {
-  width: 100%;
-}
 
 footer .container .descs {
   margin-top: 15px;
@@ -169,7 +165,7 @@ section.about-page .contents .ico-number {
 }
 
 section.about-page .contents .ico-number .number h3 {
-  color: #1EBF74;
+  color: #E97701;
   font-weight: bold;
   margin-bottom: 0;
   line-height: 1;
@@ -193,7 +189,7 @@ section.about-page .contents .page-details ul li {
 section.about-page .contents .page-details ul li .link {
   font-weight: bold;
   text-decoration: none;
-  color: #1EBF74;
+  color: #E97701;
 }
 
 section.about-page .contents .media-logo {
@@ -210,7 +206,7 @@ section.about-page .contents .faq-cards .card {
 }
 
 section.about-page .contents .faq-cards .card .question h4 {
-  color: #1EBF74;
+  color: #E97701;
   font-size: 18px;
   font-weight: bold;
 }
@@ -230,7 +226,7 @@ section.about-page .contents .home-button button {
   font-size: 16px;
   font-weight: bold;
   color: #ffffff;
-  background: #1EBF74;
+  background: #E97701;
   border: none;
 }
 /*# sourceMappingURL=about.css.map */

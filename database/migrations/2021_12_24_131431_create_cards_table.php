@@ -36,6 +36,7 @@ class CreateCardsTable extends Migration
             $table->string('usd_fund_goal');
             $table->string('total_tokens')->nullable();
             $table->string('role_of_token');
+            $table->string('heart');
 
             $table->timestamps();
         });

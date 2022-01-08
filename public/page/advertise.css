@@ -1,0 +1,352 @@
+body {
+  background: rgba(233, 121, 1, 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E97701;
+  border-radius: 10px;
+}
+
+nav {
+  background: #000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  max-width: 150px;
+}
+
+nav .navbar-toggler {
+  background: #E97701;
+}
+
+nav .navbar-toggler img {
+  width: 25px;
+}
+
+nav .navbar-collapse .navbar-nav {
+  text-align: center;
+}
+
+nav .navbar-collapse .navbar-nav .nav-link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #E97701;
+}
+
+header .situation {
+  margin-top: 10px;
+}
+
+header .situation span {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(56, 56, 56, 0.5);
+}
+
+header .situation .greenNumber {
+  color: #E97701;
+  margin-right: 20px;
+}
+
+header .situation .redNumber {
+  color: #cc327a;
+}
+
+header .smallDesc {
+  margin-top: 6px;
+}
+
+header .smallDesc p {
+  font-size: 12px;
+  color: rgba(56, 56, 56, 0.5);
+}
+
+header .smallDesc p span {
+  color: #cc327a;
+}
+footer {
+    background-color: #fff;
+}
+
+footer .container {
+  padding-top: 20px;
+  border-top: 1px solid #dbdbdb;
+}
+
+footer .container .logo {
+  width: 100px;
+}
+
+
+footer .container .descs {
+  margin-top: 15px;
+}
+
+footer .container .descs p {
+  opacity: 0.8;
+  color: #383838;
+  font-size: 12px;
+}
+
+footer .container .page-links li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+footer .container .page-links li a {
+  text-decoration: none;
+  color: #383838;
+  font-weight: 600;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+section.about-page {
+  padding: 50px 0;
+}
+
+section.about-page .contents {
+  width: 100%;
+  margin: auto;
+}
+
+@media screen and (max-width: 920px) {
+  section.about-page .contents {
+    width: 100%;
+  }
+}
+
+section.about-page .contents .title {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+
+
+section.about-page .contents .about-1st-desc {
+  text-align: justify;
+}
+
+section.about-page .contents .about-1st-desc p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+section.about-page .contents .ico-number {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 4px #e2e2e4;
+          box-shadow: 2px 2px 4px #e2e2e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 15px;
+  background: #ffffff;
+}
+
+section.about-page .contents .ico-number .number h3 {
+  color: #E97701;
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+section.about-page .contents .ico-number .target span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+section.about-page .contents .page-details {
+  text-align: center;
+}
+
+section.about-page .contents .page-details ul li {
+  font-weight: 600;
+  list-style: none;
+}
+
+section.about-page .contents .page-details ul li .link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #E97701;
+}
+
+section.about-page .contents .media-logo {
+  margin: auto;
+  width: 200px;
+}
+
+section.about-page .contents .media-logo img {
+  width: 150%;
+}
+
+section.about-page .contents .faq-cards .card {
+  padding: 20px;
+}
+
+section.about-page .contents .faq-cards .card .question h4 {
+  color: #E97701;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+section.about-page .contents .faq-cards .card .ans p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+section.about-page .contents .home-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+section.about-page .contents .home-button button {
+  padding: 8px 50px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #E97701;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  formet section */
+#FORMATS h2{
+    font-family: Rajdhani;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -.6px;
+    /* margin-left: 20px; */
+    margin-bottom: 20px;
+}
+
+.format.card-img,
+.card-img-top {
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    background: #e97901c2 ;
+    padding: 30px 20px 0 20px;
+}
+.format.title{
+   font-family: Rajdhani;
+   font-size: 32px;
+   font-weight: 700;
+   letter-spacing: -.6px;
+   margin-left: 20px;
+   margin-bottom: 20px;
+}
+
+.bottom-card .card-title{
+    font-family: Rajdhani;
+    font-size: 30px;
+    letter-spacing: -.5px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.bottom-card .card-body li{
+        font-size: 16px;
+        color: #383838;
+        letter-spacing: 0;
+        font-weight: bold;
+}
+
+.adertising-content .top-content p {
+    font-size: 22px;
+    color: #383838;
+    margin-bottom: 15px px;
+    line-height: 32px;
+    padding-right: 20px;
+    /* padding: 0 20px ; */
+}
+
+section.about-page .contents .title h1 {
+    font-family: Rajdhani;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -.6px;
+    /* margin-left: 20px; */
+    margin-bottom: 20px;
+}
+
+.top-card .card{
+    background-color: transparent ;
+   border: none;
+   padding: 0 20px;
+}
+.top-card .card .card-body{
+    padding: 0;
+}
+.top-card .card .card-body .card-title{
+    font-family: Rajdhani;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #383838;
+}
+.top-card .card-body .card-text{
+    font-size: 14px;
+    color: #383838;
+    line-height: 20px;
+}
+
+
+.last-card .card {
+    margin-top: 50px;
+    background-color: #E97701;
+    border: none;
+    padding: 10px 20px;
+}
+
+.last-card .card .card-body {
+    padding: 0;
+}
+.last-card .card .card-body .card-title {
+    font-family: Rajdhani;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.last-card .card-body .card-text {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 20px;
+}
+.last-card .card img {
+   height: 28px;
+}
+
+
+
+
+
+/*# sourceMappingURL=about.css.map */

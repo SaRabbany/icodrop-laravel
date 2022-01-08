@@ -13,30 +13,46 @@
             @foreach ($active as $active_card)
 
             <a href="{{ route('singleCard', $active_card->id) }}">
+
                 <div class="card">
-                    <div class="upper d-flex">
-                        <div class="image">
-                            <img src="{{ $active_card->logo }}" alt="">
-                        </div>
-                        <div class="info">
-                            <div class="name">
-                                <h5>{{ $active_card->name }}</h5>
+                    <div class="upper d-flex justify-content-between">
+
+                        <div class="left-side d-flex">
+                            <div class="image">
+                                <img src="{{ $active_card->logo }}" alt="">
                             </div>
-                            <div class="service-name">
-                                <span> {{ $active_card->service_type }}</span>
-                            </div>
-                            <div class="money d-flex">
-                                <div class="received">
-                                    <span>${{ $active_card->price }} </span>
+                            <div class="info">
+                                <div class="name">
+                                    <h5>{{ $active_card->name }}</h5>
                                 </div>
-                                <div class="total">
-                                    <span>/ ${{ $active_card->previous_price }}</span>
+                                <div class="service-name">
+                                    <span> {{ $active_card->service_type }}</span>
+                                </div>
+                                <div class="money d-flex">
+                                    <div class="received">
+                                        <span>${{ $active_card->price }} </span>
+                                    </div>
+                                    <div class="total">
+                                        <span>/ ${{ $active_card->previous_price }}</span>
+                                    </div>
+                                </div>
+                                <div class="percentage">
+                                    <span>{{ $active_card->diffrent_parcent }}%</span>
                                 </div>
                             </div>
-                            <div class="percentage">
-                                <span>{{ $active_card->diffrent_parcent }}%</span>
+                        </div>
+
+
+
+                        <div class="heart-icon">
+                            <i class="far fa-heart heart-i"></i>
+
+                            <div class="heart-count">
+                                <p style="line-height: .7">500</p>
                             </div>
                         </div>
+
+
                     </div>
                     <div class="bottom">
                         <div class="rate-time d-flex justify-content-between">
@@ -81,7 +97,8 @@
 
             <a href="{{ route('singleCard', $UpComing_card->id) }}">
                 <div class="card">
-                    <div class="upper d-flex">
+                    <div class="upper d-flex justify-content-between">
+
                         <div class="image">
                             <img src="{{ $UpComing_card->logo }}" alt="">
                         </div>
@@ -104,6 +121,14 @@
                                 <span>{{ $UpComing_card->diffrent_parcent }}%</span>
                             </div>
                         </div>
+                        <div class="heart-icon">
+                            <i class="far fa-heart heart-i"></i>
+
+                            <div class="heart-count">
+                                <p style="line-height: .7">500</p>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="bottom">
                         <div class="rate-time d-flex justify-content-between">
@@ -148,9 +173,10 @@
 
             <a href="{{ route('singleCard', $Ended_card->id) }}">
                 <div class="card">
-                    <div class="upper d-flex">
+                    <div class="upper d-flex justify-content-between">
+
                         <div class="image">
-                            <img src="{{ $Ended_card->logo }}" alt="">
+                            <img src="{{ $Ended_card->logo }}" class="img-fluid" alt="">
                         </div>
                         <div class="info">
                             <div class="name">
@@ -171,17 +197,34 @@
                                 <span>{{ $Ended_card->diffrent_parcent }}%</span>
                             </div>
                         </div>
+
+
+                        <div class="heart-icon">
+                            <i class="far fa-heart heart-i"></i>
+
+                            <div class="heart-count">
+                                <p style="line-height: .7">500</p>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="bottom">
                         <div class="rate-time d-flex justify-content-between">
-                            <div class="rate">
+                            {{-- <div class="rate">
                                 <span>Not Rated</span>
+
+                            </div> --}}
+                            <div>
+                                <span class="btn btn-outline-info">View Details</span>
+
+
+
+
                             </div>
                             <div class="timeLeft">
 
                                 @php
-                                $different_days = \Carbon\Carbon::parse($UpComing_card->sale_start)->diffInDays($UpComing_card->sale_end);
-
+                                $different_days = \Carbon\Carbon::parse($Ended_card->sale_start)->diffInDays($Ended_card->sale_end);
                                 @endphp
                                 <span> {{ $different_days }} day left </span>
                             </div>
@@ -207,12 +250,23 @@
 
 
 
-
-
     </div>
 
 </section>
 
+<script>
+    window.onload = function() {
+        const iconButtons = document.getElementsByClassName('heartIconIcon');
 
+        iconButtons.forEach(element => {
+            element.addEventListener('click', function() {
+                alert();
+            });
+
+        });
+    }
+
+</script>
+<script src="{{ asset('js/heart.js') }}"></script>
 
 @endsection

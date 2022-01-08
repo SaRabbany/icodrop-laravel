@@ -198,7 +198,7 @@
                 <div class="col-sm-12 col-md-4">
                     <div class="mb-3">
                         <label for="website_link" class="form-label">Website Link</label>
-                        <input type="text" class="form-control" name="website_link" id="website_link">
+                        <input type="url" class="form-control" name="website_link" id="website_link">
                     </div>
                 </div>
 
@@ -220,6 +220,14 @@
                     <div class="mb-3">
                         <label for="usd_fund_goal" class="form-label">USDFundraising Goal</label>
                         <input type="text" class="form-control" name="usd_fund_goal" id="usd_fund_goal">
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="mb-3">
+                        <label for="heart" class="form-label">Total Love </label>
+                        <input type="number" class="form-control" name="heart" id="heart">
+
                     </div>
                 </div>
 

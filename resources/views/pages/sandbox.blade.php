@@ -44,7 +44,8 @@
 
 
 
-                <a class="ico">
+                <a class="ico" href="{{ route('singleCard', $singleSandBox->id) }}">
+
                     <div class="row align-items-center">
                         <div class="col-lg-4 d-flex align-items-center">
                             <div class="img">

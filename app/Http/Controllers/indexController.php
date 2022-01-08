@@ -19,6 +19,9 @@ class indexController extends Controller
     {
         return view('pages.about');
     }
+    public function advertising(){
+        return view('pages.advertise');
+    }
     public function card_details(){
         return view('pages.card-details');
     }
@@ -60,5 +63,5 @@ class indexController extends Controller
         return view('pages.sandbox',compact('SandBox_ico'));
     }
 
-   
+
 }

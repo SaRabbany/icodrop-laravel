@@ -39,7 +39,7 @@
                 </div>
                 <div class="side-details">
                     <div class="token-ends">
-                        
+
                     @php
                         $different_days  = \Carbon\Carbon::parse($card->sale_start)->diffInDays($card->sale_end);
                     @endphp
@@ -55,10 +55,10 @@
                         </div>
                     </div>
                     <div class="website-link mb-3">
-                        <a href="{{ $card->website_link }}"><button>WEBSITE</button></a>
+                        <a href="{{ $card->website_link }}"><button>Website</button></a>
                     </div>
                     <div class="whitepaper-link">
-                        <a href="{{ $card->whitepaper }}"><button>WHITEPAPER</button></a>
+                        <a href="{{ route('whitelist') }}"><button>WhiteList</button></a>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                     <li>USDFundraising Goal: <b>{{ $card->usd_fund_goal }} TOKEN</b></li>
                     @endif
 
-                    
+
                     @if(!is_null($card->total_tokens))
                     <li>UTotal Tokens:: <b>{{ $card->total_tokens }} TOKEN</b></li>
                     @endif
@@ -122,7 +122,7 @@
                             <span>{{ $screnshot->name }}</span>
                         </div>
                     </div>
-                
+
                 </div>
                 @endforeach
 

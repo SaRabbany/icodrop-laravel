@@ -43,7 +43,7 @@
             @foreach ( $UpComing_ico as $singleUpcoming )
 
 
-            <a class="ico">
+            <a class="ico" href="{{ route('singleCard', $singleUpcoming->id) }}">
                 <div class="row align-items-center">
                     <div class="col-lg-4 d-flex align-items-center">
                         <div class="img">
@@ -63,7 +63,7 @@
                         </div>
                     </div>
 
-                   
+
                     <div class="col-lg-2 category">
                         <span>{{ $singleUpcoming->card_type }}</span>
 

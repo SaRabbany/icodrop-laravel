@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [indexController::class, 'index'])->name('index');
 Route::get('/about',[indexController::class, 'about'])->name('about');
+Route::get('/advertising', [indexController::class, 'advertising'])->name('advertising');
 Route::get('/active', [indexController::class, 'active'])->name('active');
 Route::get('/card-details', [indexController::class, 'card_details'])->name('card_details');
 Route::get('/ended', [indexController::class, 'ended'])->name('ended');
@@ -48,7 +49,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::delete('card-delete/{id}', [CardController::class, 'destroy'])->name('card-delete');
 
     Route::post('card-update-store', [cardcontroller::class,'saveUpdate'])->name('cards.saveUpdate');
-    
+
 
     route::get('archived', [CardController::class, 'archived'])->name('archived');
 });
