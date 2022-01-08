@@ -7,12 +7,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #E97701;
+  background: #feac21;
   border-radius: 10px;
 }
 
 nav {
-  background: #000;
+ /* background: #000; */
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -21,7 +21,7 @@ nav .logo {
 }
 
 nav .navbar-toggler {
-  background: #E97701;
+  background: #feac21;
 }
 
 nav .navbar-toggler img {
@@ -36,7 +36,7 @@ nav .navbar-collapse .navbar-nav .nav-link {
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
-  color: #E97701;
+  color: #feac21;
 }
 
 header .situation {
@@ -50,7 +50,7 @@ header .situation span {
 }
 
 header .situation .greenNumber {
-  color: #E97701;
+  color: #feac21;
   margin-right: 20px;
 }
 
@@ -71,7 +71,7 @@ header .smallDesc p span {
   color: #cc327a;
 }
 footer {
-    background-color: #fff;
+    background-color: #212529;
 }
 
 footer .container {
@@ -90,7 +90,7 @@ footer .container .descs {
 
 footer .container .descs p {
   opacity: 0.8;
-  color: #383838;
+  color: #ffffff;
   font-size: 12px;
 }
 
@@ -101,7 +101,7 @@ footer .container .page-links li {
 
 footer .container .page-links li a {
   text-decoration: none;
-  color: #383838;
+  color: #feac21;
   font-weight: 600;
   font-size: 14px;
   opacity: 0.8;
@@ -165,7 +165,7 @@ section.about-page .contents .ico-number {
 }
 
 section.about-page .contents .ico-number .number h3 {
-  color: #E97701;
+  color: #feac21;
   font-weight: bold;
   margin-bottom: 0;
   line-height: 1;
@@ -189,7 +189,7 @@ section.about-page .contents .page-details ul li {
 section.about-page .contents .page-details ul li .link {
   font-weight: bold;
   text-decoration: none;
-  color: #E97701;
+  color: #feac21;
 }
 
 section.about-page .contents .media-logo {
@@ -206,7 +206,7 @@ section.about-page .contents .faq-cards .card {
 }
 
 section.about-page .contents .faq-cards .card .question h4 {
-  color: #E97701;
+  color: #feac21;
   font-size: 18px;
   font-weight: bold;
 }
@@ -226,7 +226,7 @@ section.about-page .contents .home-button button {
   font-size: 16px;
   font-weight: bold;
   color: #ffffff;
-  background: #E97701;
+  background: #feac21;
   border: none;
 }
 /*# sourceMappingURL=about.css.map */

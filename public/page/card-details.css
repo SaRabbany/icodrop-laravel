@@ -7,7 +7,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #E97701;
+  background: #feac21;
   border-radius: 10px;
 }
 
@@ -25,7 +25,7 @@ nav .logo img {
 }
 
 nav .navbar-toggler {
-  background: #E97701;
+  background: #feac21;
 }
 
 nav .navbar-toggler img {
@@ -38,9 +38,9 @@ nav .navbar-collapse .navbar-nav {
 
 nav .navbar-collapse .navbar-nav .nav-link {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
-  color: #E97701;
+  color: #feac21;
 }
 
 header .situation {
@@ -54,7 +54,7 @@ header .situation span {
 }
 
 header .situation .greenNumber {
-  color: #E97701;
+  color: #feac21;
   margin-right: 20px;
 }
 
@@ -76,7 +76,7 @@ header .smallDesc p span {
 }
 
 footer {
-    background-color: #fff;
+    background-color: #212529;
 }
 
 footer .container {
@@ -98,7 +98,7 @@ footer .container .descs {
 
 footer .container .descs p {
   opacity: 0.8;
-  color: #383838;
+  color: #ffffff;
   font-size: 12px;
 }
 
@@ -109,7 +109,7 @@ footer .container .page-links li {
 
 footer .container .page-links li a {
   text-decoration: none;
-  color: #383838;
+  color: #feac21;
   font-weight: 600;
   font-size: 14px;
   opacity: 0.8;
@@ -234,7 +234,7 @@ section.card-details .coverCard .card-contents .side-details .money-transfer {
 section.card-details .coverCard .card-contents .side-details .money-transfer .total-reveived b {
   font-size: 20px;
   font-weight: bold;
-  color: #E97701;
+  color: #feac21;
 }
 
 section.card-details .coverCard .card-contents .side-details .money-transfer h6 {
@@ -252,7 +252,7 @@ section.card-details .coverCard .card-contents .side-details .website-link a but
   padding: 2px;
   font-size: 14px;
   border: none;
-  background: #E97701;
+  background: #feac21;
   font-weight: 500;
   color: #ffffff;
 }

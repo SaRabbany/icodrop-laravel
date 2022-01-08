@@ -7,7 +7,7 @@ body {
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #E97701;
+    background: #feac21;
     border-radius: 10px;
   }
 
@@ -25,7 +25,7 @@ body {
   }
 
   nav .navbar-toggler {
-    background: #E97701;
+    background: #feac21;
   }
 
   nav .navbar-toggler img {
@@ -38,9 +38,9 @@ body {
 
   nav .navbar-collapse .navbar-nav .nav-link {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
-    color: #E97701;
+    color: #feac21;
   }
 
   header .situation {
@@ -54,7 +54,7 @@ body {
   }
 
   header .situation .greenNumber {
-    color: #E97701;
+    color: #feac21;
     margin-right: 20px;
   }
 
@@ -73,6 +73,9 @@ body {
 
   header .smallDesc p span {
     color: #cc327a;
+  }
+  footer{
+      background: #212529;
   }
 
   footer .container {
@@ -94,7 +97,7 @@ body {
 
   footer .container .descs p {
     opacity: 0.8;
-    color: #383838;
+    color: #feac21;
     font-size: 12px;
   }
 
@@ -230,7 +233,7 @@ body {
   section.card-details .coverCard .card-contents .side-details .money-transfer .total-reveived b {
     font-size: 20px;
     font-weight: bold;
-    color: #E97701;
+    color: #feac21;
   }
 
   section.card-details .coverCard .card-contents .side-details .money-transfer h6 {
@@ -248,7 +251,7 @@ body {
     padding: 2px;
     font-size: 14px;
     border: none;
-    background: #E97701;
+    background: #feac21;
     font-weight: 500;
     color: #ffffff;
   }

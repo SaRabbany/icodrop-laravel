@@ -171,7 +171,7 @@
 
             @foreach ($Ended as $Ended_card)
 
-            <a href="{{ route('singleCard', $Ended_card->id) }}">
+            <a >
                 <div class="card">
                     <div class="upper d-flex justify-content-between">
 
@@ -208,14 +208,16 @@
                         </div>
 
                     </div>
-                    <div class="bottom">
+                    <div class="bottom" href="{{ route('singleCard', $Ended_card->id) }}">
+
                         <div class="rate-time d-flex justify-content-between">
                             {{-- <div class="rate">
                                 <span>Not Rated</span>
 
                             </div> --}}
                             <div>
-                                <span class="btn btn-outline-info">View Details</span>
+                                a
+                                <span class="btn btn-outline-info">View Details </span>
 
 
 

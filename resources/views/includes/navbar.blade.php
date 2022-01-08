@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
     <div class="container">
         <a class="navbar-brand" href="{{ route('index') }}">
             <div class="logo">

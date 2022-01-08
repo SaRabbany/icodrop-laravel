@@ -35,9 +35,17 @@
                     <div class="col-lg-2">
                         <span class="received-title">RECEIVED</span>
                     </div>
+
+                    <div class="col-lg-2">
+                        <span class="end-date-title">START DATE</span>
+                    </div>
+
+
                     <div class="col-lg-2">
                         <span class="end-date-title">ENDED DATE</span>
                     </div>
+
+
                 </div>
             </div>
             <div class="ico-details">
@@ -74,12 +82,25 @@
                         </div>
                         <div class="col-lg-2 end-date">
                             @php
+                            $endMonth = \Carbon\Carbon::parse($singleActive->sale_start)->format('M');
+                            $enddate = \Carbon\Carbon::parse($singleActive->sale_start)->format('d');
+                            @endphp
+                            <span> {{ $endMonth }} - {{ $enddate }}</span>
+
+                        </div>
+
+
+                        <div class="col-lg-2 end-date">
+                            @php
                             $endMonth = \Carbon\Carbon::parse($singleActive->sale_end)->format('M');
                             $enddate = \Carbon\Carbon::parse($singleActive->sale_end)->format('d');
                         @endphp
                             <span> {{ $endMonth }} - {{ $enddate }}</span>
 
                         </div>
+
+
+
                     </div>
                 </a>
 

@@ -3,7 +3,8 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="logo">
-                    <img src="LogoDrops.png" alt="">
+                    <img src="{{ asset('images/logo/LogoDrops.png') }}" alt="">
+
                 </div>
                 <div class="descs">
                     <p>Made with  for the Decentralized World.</p>
