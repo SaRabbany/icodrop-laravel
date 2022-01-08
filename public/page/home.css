@@ -27,6 +27,9 @@ nav .logo img {
 nav .navbar-toggler {
   background: #feac21;
 }
+   nav .navbar-collapse .navbar-nav .nav-link:hover {
+       color: #ffffff;
+   }
 
 nav .navbar-toggler img {
   width: 25px;

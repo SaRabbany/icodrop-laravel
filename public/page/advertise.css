@@ -31,6 +31,9 @@ nav .navbar-toggler img {
 nav .navbar-collapse .navbar-nav {
   text-align: center;
 }
+   nav .navbar-collapse .navbar-nav .nav-link:hover {
+       color: #ffffff;
+   }
 
 nav .navbar-collapse .navbar-nav .nav-link {
   text-decoration: none;

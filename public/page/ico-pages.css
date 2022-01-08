@@ -23,7 +23,9 @@ nav .logo {
 nav .logo img {
   width: 100%;
 }
-
+   nav .navbar-collapse .navbar-nav .nav-link:hover {
+       color: #ffffff;
+   }
 nav .navbar-toggler {
   background: #feac21;
 }
