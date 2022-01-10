@@ -9,16 +9,23 @@ class indexController extends Controller
 {
     public function index()
     {
+        // return view('index');
         $active = card::where('card_type','Active')->where('sale_end','>', now()->format('Y-m-d H:i:s'))->orderBy('id','DESC')->take(10)->get();
         $UpComing = card::where('card_type', 'UpComing')->where('sale_end','>',now()->format('Y-m-d H:i:s') )->orderBy('id','DESC')->take(10)->get();
         $Ended = card::where('card_type', 'Ended')->where('sale_end','>', now()->format('Y-m-d H:i:s'))->orderBy('id','DESC')->take(10)->get();
         $SandBox = card::where('card_type', 'SandBox')->where('sale_end','>', now()->format('Y-m-d H:i:s'))->orderBy('id','DESC')->take(10)->get();
         return view('index', compact('active', 'UpComing', 'Ended', 'SandBox'));
     }
+
     public function about()
     {
-        return view('pages.about');
+        $active = card::where('card_type', 'Active')->where('sale_end', '>', now()->format('Y-m-d H:i:s'))->orderBy('id', 'DESC')->take(10)->get()->count();
+        $UpComing = card::where('card_type', 'UpComing')->where('sale_end', '>', now()->format('Y-m-d H:i:s'))->orderBy('id', 'DESC')->take(10)->get()->count();
+        $Ended = card::where('card_type', 'Ended')->where('sale_end', '>', now()->format('Y-m-d H:i:s'))->orderBy('id', 'DESC')->take(10)->get()->count();
+        return view('pages.about', compact('active', 'UpComing', 'Ended'));
     }
+
+
     public function advertising(){
         return view('pages.advertise');
     }

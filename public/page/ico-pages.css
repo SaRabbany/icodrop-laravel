@@ -17,7 +17,7 @@ nav {
 }
 
 nav .logo {
-  max-width: 150px;
+  max-width: 100px;
 }
 
 nav .logo img {
@@ -109,7 +109,7 @@ footer .container .page-links li {
 
 footer .container .page-links li a {
   text-decoration: none;
-  color: #feac21;
+  color: #ffffff;
   font-weight: 600;
   font-size: 14px;
   opacity: 0.8;

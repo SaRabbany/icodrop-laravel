@@ -91,8 +91,7 @@ class CardController extends Controller
        $card->previous_price = $prev_price;
        $card->ico_token_price = $request->ico_token_price;
 
-       $increse = $current_price - $prev_price;
-       $parcent = $increse / $prev_price * 100;
+       $parcent = ($current_price / $prev_price) * 100;
        $card->diffrent_parcent = $parcent;
 
        $card->role_of_token = $request->role_of_token;

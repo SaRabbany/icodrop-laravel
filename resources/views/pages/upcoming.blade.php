@@ -23,7 +23,7 @@
 <section class="active-ico-page ico-container">
     <div class="container">
         <div class="title">
-            <h2>ACTIVE ICO</h2>
+            <h2>UPCOMING ICO</h2>
         </div>
         <div class="title-box">
             <div class="row">
@@ -36,6 +36,10 @@
                 <div class="col-lg-2">
                     <span class="received-title">RECEIVED</span>
                 </div>
+                <div class="col-lg-2">
+                    <span class="received-title">TOTAL</span>
+                </div>
+
                 <div class="col-lg-2">
                     <span class="end-date-title">ENDED DATE</span>
                 </div>
@@ -74,8 +78,11 @@
                     </div>
                     <div class="col-lg-2 received">
                         <span>${{ $singleUpcoming->price }}</span>
-
                     </div>
+                    <div class="col-lg-2 received">
+                        <span>${{ $singleUpcoming->previous_price }}</span>
+                    </div>
+
                     <div class="col-lg-2 end-date">
                         @php
                         $endMonth = \Carbon\Carbon::parse($singleUpcoming->sale_end)->format('M');

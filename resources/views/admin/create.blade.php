@@ -146,14 +146,14 @@
             <div class="row">
                 <div class="col-sm-12 col-md-4">
                     <div class="mb-3">
-                        <label for="price" class="form-label">Price</label>
+                        <label for="price" class="form-label">Total Received</label>
                         <input type="number" class="form-control" name="price" id="price" required>
                     </div>
                 </div>
 
                 <div class="col-sm-12 col-md-4">
                     <div class="mb-3">
-                        <label for="previous_price" class="form-label">Previous Price</label>
+                        <label for="previous_price" class="form-label">Total Amount</label>
                         <input type="number" class="form-control" name="previous_price" id="previous_price" required>
                     </div>
                 </div>

@@ -18,7 +18,8 @@
                 <div class="ico-numbers my-5 d-flex justify-content-center flex-wrap">
                     <div class="ico-number active">
                         <div class="number">
-                            <h3>32</h3>
+                            <h3>{{ $active }}</h3>
+
                         </div>
                         <div class="target">
                             <span>Active ICO's</span>
@@ -26,7 +27,8 @@
                     </div>
                     <div class="ico-number ended">
                         <div class="number">
-                            <h3>32</h3>
+                            <h3>{{ $Ended }}</h3>
+
                         </div>
                         <div class="target">
                             <span>Ended ICO's</span>
@@ -34,7 +36,8 @@
                     </div>
                     <div class="ico-number upcoming">
                         <div class="number">
-                            <h3>32</h3>
+                            <h3>{{ $UpComing }}</h3>
+
                         </div>
                         <div class="target">
                             <span>Upcoming ICO's</span>

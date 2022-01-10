@@ -37,12 +37,9 @@
                     <div class="col-lg-2">
                         <span class="received-title">RECEIVED</span>
                     </div>
-
                     <div class="col-lg-2">
-                        <span class="end-date-title">START DATE</span>
+                        <span class="received-title">TOTAL</span>
                     </div>
-
-
                     <div class="col-lg-2">
                         <span class="end-date-title">ENDED DATE</span>
                     </div>
@@ -82,14 +79,14 @@
                             <span>${{ $singleActive->price }}</span>
 
                         </div>
-                        <div class="col-lg-2 end-date">
-                            @php
-                            $endMonth = \Carbon\Carbon::parse($singleActive->sale_start)->format('M');
-                            $enddate = \Carbon\Carbon::parse($singleActive->sale_start)->format('d');
-                            @endphp
-                            <span> {{ $endMonth }} - {{ $enddate }}</span>
+                        <div class="col-lg-2 received">
+
+                            <span>${{ $singleActive->previous_price }}</span>
+
 
                         </div>
+
+
 
 
                         <div class="col-lg-2 end-date">

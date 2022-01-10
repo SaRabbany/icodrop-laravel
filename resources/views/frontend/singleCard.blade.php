@@ -111,22 +111,25 @@
                 <h6>SCREENSHOTS</h6>
             </div>
 
-            @if(!$card->screnshots->isEmpty())
-                @foreach ($card->screnshots as $screnshot )
-                <div class="screenshot-container">
-                    <div class="screenshot">
-                        <div class="image">
-                            <img src="{{ $screnshot->image }}" alt="">
-                        </div>
-                        <div class="screenshot-name">
-                            <span>{{ $screnshot->name }}</span>
-                        </div>
-                    </div>
 
-                </div>
-                @endforeach
+            <div class="screenshot-container">
+                @if(!$card->screnshots->isEmpty())
+                    @foreach ($card->screnshots as $screnshot )
+                        <div class="screenshot">
+                            <div class="image">
+                                <img src="{{ $screnshot->image }}" alt="">
+                            </div>
+                            <div class="screenshot-name">
+                                <span>{{ $screnshot->name }}</span>
+                            </div>
+                        </div>
 
-            @endif
+                    @endforeach
+
+                @endif
+            </div>
+
+
 
             </div>
         </div>

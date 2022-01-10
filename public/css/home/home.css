@@ -20,7 +20,7 @@ body {
   }
 
   nav .logo {
-    max-width: 150px;
+    max-width: 100px;
   }
 
   nav .logo img {
@@ -166,22 +166,22 @@ body {
     margin-top: 5px;
   }
 
-  section.home-card-section .cards-row .cards a {
+  section.home-card-section .cards-row .cards {
     color: #000;
     text-decoration: none;
   }
 
-  section.home-card-section .cards-row .cards a .card {
+  section.home-card-section .cards-row .cards .card {
     padding: 20px;
     border: none;
     border-bottom: 1px solid rgba(233, 121, 1, 0.342);
   }
 
-  section.home-card-section .cards-row .cards a .card .upper {
+  section.home-card-section .cards-row .cards .card .upper {
     margin-bottom: 12px;
   }
 
-  section.home-card-section .cards-row .cards a .card .upper .image {
+  section.home-card-section .cards-row .cards .card .upper .image {
     margin-right: 12px;
     width: 60px;
     height: 60px;
@@ -189,29 +189,29 @@ body {
     overflow: hidden;
   }
 
-  section.home-card-section .cards-row .cards a .card .upper .image img {
+  section.home-card-section .cards-row .cards .card .upper .image img {
     width: 100%;
   }
 
-  section.home-card-section .cards-row .cards a .card .upper .info .name h5 {
+  section.home-card-section .cards-row .cards .card .upper .info .name h5 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 0;
   }
 
-  section.home-card-section .cards-row .cards a .card .upper .info .money {
+  section.home-card-section .cards-row .cards .card .upper .info .money {
     margin-top: 5px;
   }
 
-  section.home-card-section .cards-row .cards a .card .upper .info .money .received span {
+  section.home-card-section .cards-row .cards .card .upper .info .money .received span {
     color: #ffac22;
   }
 
-  section.home-card-section .cards-row .cards a .card .upper .info .percentage span {
+  section.home-card-section .cards-row .cards .card .upper .info .percentage span {
     opacity: 0.6;
   }
 
-  section.home-card-section .cards-row .cards a .card .bottom .rate span, section.home-card-section .cards-row .cards a .card .bottom .timeLeft span {
+  section.home-card-section .cards-row .cards .card .bottom .rate span, section.home-card-section .cards-row .cards a .card .bottom .timeLeft span {
     color: rgba(0, 0, 0, 0.55);
     font-size: 14px;
     font-weight: 400;
@@ -234,15 +234,26 @@ body {
     color: #ffac22;
     text-decoration: none;
   }
-
+.heart-icon{
+    text-align: center;
+}
     .heart-i{
         color: #ffac22;
         font-size: 24px;
+        text-align: center;
 
     }
     .heart-bg{
-        background: #ffac22;
+        font-weight: 700;
     }
-
+.details-btn{
+    background: #ffac22;
+    color: white;
+    font-weight: 700;
+    padding: 2px 25px 0 25px;
+    border-radius: 0;
+    border: none;
+    font-size: 14px;
+}
 
   /*# sourceMappingURL=home.css.map */
